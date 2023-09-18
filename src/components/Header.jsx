@@ -21,7 +21,7 @@ const Header = ({cartValue, setIsCartOpened}) => {
     return (
         <header className="header">
             <div className="header__container">
-                <Link style={{textDecoration:'none'}} to="/react-sneakers" className="header__logo">
+                <Link style={{textDecoration:'none'}} to="/" className="header__logo">
                     <img src={headerLogo} alt=""/>
                     <p><span>React Sneakers</span><br/>Store for the best sneakers</p>
                 </Link>
@@ -29,8 +29,8 @@ const Header = ({cartValue, setIsCartOpened}) => {
                     <a onClick={() => {
                         setIsCartOpened(true);
                     }}><img src={cart} alt=""/>{cartValue*1.05} $</a>
-                    <Link to='react-sneakers/favorite'><img src={favorite} alt=""/></Link>
-                    <Link to='react-sneakers/orders'><img src={account} alt=""/></Link>
+                    <Link to='/favorite'><img src={favorite} alt=""/></Link>
+                    <Link to='/orders'><img src={account} alt=""/></Link>
                 </nav>
                 <div className="header__menuicon" onClick={openMenu}>
                     <div className="line"></div>
@@ -47,8 +47,8 @@ const Header = ({cartValue, setIsCartOpened}) => {
                        setIsCartOpened(true);
                        setIsMenu(false);
                    }}><img src={cart} alt=""/>Cart</a>
-                   <Link onClick={() => setIsMenu(false)} style={{textDecoration:"none"}} to='react-sneakers/favorite'><img src={favorite} alt=""/>Favorites</Link>
-                   <Link onClick={() => setIsMenu(false)} style={{textDecoration:"none"}} to='react-sneakers/orders'><img src={account} alt=""/>Orders</Link>
+                   <Link onClick={() => setIsMenu(false)} style={{textDecoration:"none"}} to='/favorite'><img src={favorite} alt=""/>Favorites</Link>
+                   <Link onClick={() => setIsMenu(false)} style={{textDecoration:"none"}} to='/orders'><img src={account} alt=""/>Orders</Link>
                </div>
             </div>
             <div className="header__cart"></div>

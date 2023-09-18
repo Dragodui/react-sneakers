@@ -35,7 +35,7 @@ const Orders = ({
                         {
                             ordersFromStorage.length
                                 ? <div className="orders__inner">
-                                   <PagesHeader title="My orders:" link={"/react-sneakers"}/>
+                                   <PagesHeader title="My orders:" link={"/"}/>
                                     <div className="orders__list">
                                         {
                                             ordersFromStorage.map((order, index) =>

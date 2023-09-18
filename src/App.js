@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {useState} from "react";
 import "./style/style.css"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header";
 import Home from "./Pages/Home";
 import Orders from "./Pages/Orders";
@@ -41,7 +41,7 @@ const App = () => {
         localStorage.setItem('favorites', JSON.stringify(favorite));
 
         }, [favorite]);
-
+        
     useEffect(() => {
 
         localStorage.setItem('orders', JSON.stringify(orders));
@@ -91,7 +91,7 @@ const App = () => {
                 }
                 <Routes>
                     <Route
-                        exact path="/react-sneakers"
+                        exact path="/"
                         element = {
                         <Home
                             setCart={setCart}
@@ -100,7 +100,7 @@ const App = () => {
                         />}
                     />
                     <Route
-                        exact path="react-sneakers/orders"
+                        exact path="/orders"
                         element = {
                             <Orders
                                 setCart={setCart}
@@ -110,7 +110,7 @@ const App = () => {
                         }
                     />
                     <Route
-                        exact path="react-sneakers/favorite"
+                        exact path="/favorite"
                         element = {
                             <Favorite
                                 favorite={favorite}
@@ -119,7 +119,7 @@ const App = () => {
                             />}
                     />
                     <Route
-                        exact path= "react-sneakers/orders/:index"
+                        exact path= "/orders/:index"
                         element = {
                         <Order
                             orders={orders}
