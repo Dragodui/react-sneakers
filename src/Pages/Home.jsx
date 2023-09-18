@@ -17,7 +17,7 @@ const Home = ({
     return (
         <div style={{padding:"0 15px"}}>
             <Banner/>
-            <h1 style={{margin:"30px 0"}}>All snickers</h1>
+            <h1 style={{margin:"30px 0"}}>All sneakers</h1>
             {
                 isLoading
                     ?   <Loader/>
