@@ -85,7 +85,7 @@ const App = () => {
                 }
                 <Routes>
                     <Route
-                        exact path="/"
+                        exact path="/react-sneakers"
                         element = {
                         <Home
                             setCart={setCart}

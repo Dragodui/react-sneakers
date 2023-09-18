@@ -21,7 +21,7 @@ const Header = ({cartValue, setIsCartOpened}) => {
     return (
         <header className="header">
             <div className="header__container">
-                <Link style={{textDecoration:'none'}} to="/" className="header__logo">
+                <Link style={{textDecoration:'none'}} to="/react-sneakers" className="header__logo">
                     <img src={headerLogo} alt=""/>
                     <p><span>React Sneakers</span><br/>Store for the best sneakers</p>
                 </Link>
