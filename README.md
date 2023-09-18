@@ -4,14 +4,6 @@ Front end internet shop project
 
 ## Technologies
 
-<<<<<<< HEAD
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" alt="HTML logo" width="30" height="30">
-<img src="" alt >
-
-## Why i used HashRouter instead of BrowserRouter?
-
-Because GitHub Pages cannot correctly works with singe-page applications on BrowserRouter
-=======
 <div style="display: flex;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" alt="HTML logo" width="50" height="50">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="Css logo" width="50" height="50">
@@ -24,6 +16,5 @@ Because GitHub Pages cannot correctly works with singe-page applications on Brow
 ## Why i used HashRouter instead of BrowserRouter?
 
 Because GitHub Pages cannot correctly works with singe-page applications on BrowserRouter <br/>
->>>>>>> 0197c3835bd12a5dbe9ef80df80e7756bf543607
 More here: https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
 
