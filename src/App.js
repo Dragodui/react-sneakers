@@ -94,7 +94,7 @@ const App = () => {
                         />}
                     />
                     <Route
-                        path="/orders"
+                        exact path="/orders"
                         element = {
                             <Orders
                                 setCart={setCart}
