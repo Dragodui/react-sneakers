@@ -13,7 +13,7 @@ const Empty = ({img, title}) => {
             </div>
             <Link
                 style={{textDecoration: "none"}}
-                to="/">
+                to="/react-sneakers">
                 <Button style={{textDecoration:"none", padding:"18px 24px"}}>
                     <img style={{transform:"rotate(180deg)"}} src={arrow} alt=""/>Back to shop
                 </Button>
