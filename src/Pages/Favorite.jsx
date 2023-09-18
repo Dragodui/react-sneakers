@@ -18,7 +18,7 @@ const Favorite = ({
                     ? <div className="favorite">
                         <PagesHeader
                             title = "Favorite:"
-                            link={"/"}
+                            link={"/react-sneakers"}
                         />
                         <div className="favorite__list">
                             <SneakersList

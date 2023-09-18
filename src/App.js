@@ -44,6 +44,12 @@ const App = () => {
 
     useEffect(() => {
 
+        localStorage.setItem('orders', JSON.stringify(orders));
+
+        }, [orders]);
+
+    useEffect(() => {
+
         localStorage.setItem('cart', JSON.stringify(cart));
 
         }, [cart]);
