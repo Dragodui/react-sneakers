@@ -15,6 +15,6 @@ Front end internet shop project
   
 ## Why i used HashRouter instead of BrowserRouter?
 
-Because GitHub Pages cannot correctly works with singe-page applications on BrowserRouter
+Because GitHub Pages cannot correctly works with singe-page applications on BrowserRouter <br/>
 More here: https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
 
