@@ -10,7 +10,6 @@ import Modal from "./components/UI/Modal/Modal";
 import Favorite from "./Pages/Favorite";
 import Order from "./Pages/Order";
 
-
 const App = () => {
 
     const [cart, setCart] = useState([]);
@@ -55,6 +54,7 @@ const App = () => {
     };
 
     useEffect(() => countCartValue(), [cart]);
+
 
 
     return (

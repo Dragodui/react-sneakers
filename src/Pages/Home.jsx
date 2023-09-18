@@ -12,8 +12,6 @@ const Home = ({
 
     const [sneakersList, setSneakersList] = useState(sneakers);
 
-
-
     return (
         <div style={{padding:"0 15px"}}>
             <Banner/>
