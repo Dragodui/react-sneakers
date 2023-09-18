@@ -1,0 +1,28 @@
+.button {
+  background: #9DD458;
+  width: 100%;
+  padding: 18px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  align-items: center;
+  border-radius: 18px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.button p {
+  color: white;
+}
