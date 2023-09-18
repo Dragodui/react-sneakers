@@ -1,6 +1,10 @@
 # React sneakers
 
 Front end internet shop project
+## Project demo
+
+Here you can see the demo of this project: <br/>
+https://dragodui.github.io/react-sneakers/
 
 ## Technologies
 
