@@ -64,7 +64,7 @@ const Order = ({
                    </div>
                </div>
                <div className="orderPage__delete">
-                   <Link onClick={deleteOrder} to="/orders"><Button>Delete order</Button></Link>
+                   <Link onClick={deleteOrder} to="react-sneakers/orders"><Button>Delete order</Button></Link>
                </div>
            </div>
         </div>

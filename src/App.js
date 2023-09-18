@@ -94,7 +94,7 @@ const App = () => {
                         />}
                     />
                     <Route
-                        exact path="/orders"
+                        exact path="react-sneakers/orders"
                         element = {
                             <Orders
                                 setCart={setCart}
@@ -104,7 +104,7 @@ const App = () => {
                         }
                     />
                     <Route
-                        exact path="/favorite"
+                        exact path="react-sneakers/favorite"
                         element = {
                             <Favorite
                                 favorite={favorite}
@@ -113,7 +113,7 @@ const App = () => {
                             />}
                     />
                     <Route
-                        exact path= "/orders/:index"
+                        exact path= "react-sneakers/orders/:index"
                         element = {
                         <Order
                             orders={orders}

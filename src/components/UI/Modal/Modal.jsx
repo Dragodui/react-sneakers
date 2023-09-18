@@ -27,7 +27,7 @@ const Modal = ({setIsModalVisible, setIsCartOpened}) => {
                         setIsCartOpened(false);
                         }}
                        className="gotoorders"
-                       to="/orders">
+                       to="react-sneakers/orders">
                            <span>Go to my Orders</span> <img src={arrow}/>
                    </Link>
             </div>
