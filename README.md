@@ -22,3 +22,4 @@ https://dragodui.github.io/react-sneakers/
 Because GitHub Pages cannot correctly works with singe-page applications on BrowserRouter <br/>
 More here: https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
 
+Here you can find [link]([https://www.example.com/](https://github.com/Dragodui/react-sneakers-with-BrowserRouter)https://github.com/Dragodui/react-sneakers-with-BrowserRouter) to version with BrowserRouter.
