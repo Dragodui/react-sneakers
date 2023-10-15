@@ -6,6 +6,8 @@ Front end internet shop project
 Here you can see the demo of this project: <br/>
 https://dragodui.github.io/react-sneakers/
 
+<img src="https://mini.s-shot.ru/1440x800/JPEG/1440/Z100/?https%3A%2F%2Fdragodui.github.io%2Freact-sneakers">
+
 ## Technologies
 
 <div style="display: flex;">
