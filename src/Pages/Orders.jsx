@@ -7,24 +7,17 @@ import Loader from "../components/UI/Loader/Loader";
 import PagesHeader from "../components/PagesHeader";
 import Button from "../components/UI/Button/Button";
 
-
 const Orders = ({
     setCart,
     orders,
     setFavorite
 }) => {
 
-    const [ordersFromStorage, setOrdersFromStorage] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const storedData = localStorage.getItem('orders');
-        if (storedData) {
-            setOrdersFromStorage(JSON.parse(storedData));
-        }
-        setIsLoading(false);
+        if (orders) setIsLoading(false);
     }, [orders]);
-
 
     return (
         <>
@@ -33,12 +26,12 @@ const Orders = ({
                     ? <Loader/>
                     : <div style={{padding:"0 15px"}} className="orders">
                         {
-                            ordersFromStorage.length
+                            orders.length
                                 ? <div className="orders__inner">
                                    <PagesHeader title="My orders:" link={"/"}/>
-                                    <div className="orders__list">
+                                    <div className="orders__list list">
                                         {
-                                            ordersFromStorage.map((order, index) =>
+                                            orders.map((order, index) =>
                                                 <div key={index} className="orders__order order">
                                                     <h2>Order: #{index+1}</h2>
                                                     <div className="orders__orderinner">
@@ -51,7 +44,7 @@ const Orders = ({
                                                             />
                                                         }
                                                         <Link to={`${index+1}`}>
-                                                            <Button>
+                                                            <Button style={{padding: 20}}>
                                                                 About order
                                                             </Button>
                                                         </Link>

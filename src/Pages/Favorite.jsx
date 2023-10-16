@@ -12,26 +12,27 @@ const Favorite = ({
 
 
     return (
-        <>
+        <div className="favorite">
             {
                 favorite.length
-                    ? <div className="favorite">
-                        <PagesHeader
-                            title = "Favorite:"
-                            link={"/"}
-                        />
-                        <div className="favorite__list">
-                            <SneakersList
-                                style={{margin:0}}
-                                sneakers={favorite}
-                                setCart={setCart}
-                                setFavorite={setFavorite}
-                            />
-                        </div>
-                      </div>
+                    ?
+                       <>
+                           <PagesHeader
+                               title = "Favorite:"
+                               link={"/"}
+                           />
+                           <div className="favorite__list">
+                               <SneakersList
+                                   style={{margin:0}}
+                                   sneakers={favorite}
+                                   setCart={setCart}
+                                   setFavorite={setFavorite}
+                               />
+                           </div>
+                       </>
                     : <Empty title="You have no favorite yet" img={smile}/>
             }
-        </>
+        </div>
     );
 };
 

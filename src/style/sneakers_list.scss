@@ -1,0 +1,89 @@
+.list {
+  margin: 20px 0;
+  & h1 {
+    margin-bottom: 30px;
+  }
+}
+.sneakers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 30px;
+  &__like {
+    width: 32px;
+  }
+}
+.sneaker {
+  box-shadow: 0px 14px 30px 0px #0000000D;
+  border-radius: 40px;
+  padding:10px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  &__priceblock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__likearea {
+    width: 100%;
+    display: flex;
+    align-items: start;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 14px;
+  }
+  &__price {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BDBDBD;
+  }
+  & span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
+}
+@media (max-width:459px) {
+  .sneaker {
+    & img {
+      max-width: 320px;
+    }
+    &__likearea {
+      & img {
+        width: 50px;
+      }
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 1.2;
+    }
+    &__priceblock {
+      & img {
+        width: 50px;
+      }
+    }
+    &__price {
+      line-height: 1.5;
+      font-size: 18px;
+      & span {
+        font-size: 24px;
+      }
+    }
+  }
+}

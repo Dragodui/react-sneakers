@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+  margin-top: 40px;
+}
+.footer__email {
+  color: #9D9D9D;
+  font-size: 16px;
+}
+
+@media (max-width: 492px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

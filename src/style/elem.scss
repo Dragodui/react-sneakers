@@ -1,0 +1,32 @@
+.elem {
+  &__img {
+    max-width: 100%;
+  }
+  &__buttonimg {
+    margin: 0;
+    width: 32px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    & p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    & span {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}
+.error {
+  color: #ff3131;
+  margin: 10px 0;
+  font-size: 16px;
+}

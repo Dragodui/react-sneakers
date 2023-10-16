@@ -1,0 +1,141 @@
+.cart {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 12;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  animation: fade 0.3s ease;
+}
+.cart.active {
+  right: 0;
+}
+.cart.show {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+.cart.hide {
+  animation: fadeOut 0.3s ease;
+}
+.cart__footer {
+  margin-top: 30px;
+}
+.cart__elem {
+  border: 1px solid #F3F3F3;
+  padding: 20px;
+  border-radius: 20px;
+}
+.cart__cart {
+  position: fixed;
+  width: 300px;
+  background: white;
+  height: 100vh;
+  padding: 20px;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+}
+.cart__empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10vh;
+}
+.cart__empty img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.cart__empty h2 {
+  margin-bottom: 20px;
+}
+.cart__empty p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #9D9D9D;
+  margin-bottom: 40px;
+}
+.cart__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.cart__header p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.cart__elems {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart__tax, .cart__total {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.cart__tax p, .cart__total p {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__order {
+  background: #9DD458;
+  width: 100%;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  align-items: center;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+.cart__order:hover {
+  gap: 20px;
+}
+.cart__menuclose {
+  font-size: 30px;
+}
+
+.cart.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=cart.css.map */

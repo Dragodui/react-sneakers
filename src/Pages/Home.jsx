@@ -13,9 +13,9 @@ const Home = ({
     const [sneakersList, setSneakersList] = useState(sneakers);
 
     return (
-        <div style={{padding:"0 15px"}}>
+        <div className="homepage">
             <Banner/>
-            <h1 style={{margin:"30px 0"}}>All sneakers</h1>
+            <h1>All sneakers</h1>
             {
                 isLoading
                     ?   <Loader/>

@@ -1,0 +1,125 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 11;
+  background: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    max-width: 960px;
+    margin:20px 0;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    & img {
+      width: 40px;
+    }
+    & span {
+      font-size: 20px;
+      font-weight: 700;
+      color: black;
+      text-transform: uppercase;
+      line-height: 24.2px;
+    }
+    & p {
+      color: #9D9D9D;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 30px;
+    & a:first-child {
+      gap: 10px;
+    }
+    & a {
+      color: #5C5C5C;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+  }
+  &__menuicon {
+    width: 30px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  &__menu {
+    display: none;
+  }
+}
+.line {
+  content: '';
+  height: 3px;
+  background: black;
+  width: 100%;
+  border-radius: 200px;
+}
+@media (max-width:500px) {
+  .header {
+    &__menuicon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+    &__nav {
+      display: none;
+    }
+    &__menu.active {
+      right: 0;
+    }
+    &__menu {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 1;
+      width: 240px;
+      height: 100%;
+      right: -100%;
+      background-color: rgb(0, 0, 0);
+      transition: 0.5s ease all;
+    }
+    &__menunav {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      & a {
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 26px;
+        font-weight: 600;
+      }
+      & img {
+        width: 30px;
+      }
+    }
+    &__menuclose {
+      color: white;
+      background: black;
+      font-size: 30px;
+      border: none;
+      position: absolute;
+      right: 20px;
+      top: 32px;
+    }
+  }
+}
+

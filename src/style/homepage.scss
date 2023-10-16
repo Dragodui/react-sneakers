@@ -1,0 +1,80 @@
+.homepage {
+  padding: 0 15px;
+  flex: 1;
+  & h1 {
+    margin: 30px 0;
+  }
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  &__container {
+    background: rgb(244, 239, 233);
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & p {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 46px;
+      text-align: left;
+      margin-bottom: 11px;
+    }
+    & button {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      text-align: center;
+      background: #A5D364;
+      padding: 14px 58px;
+      border: none;
+      border-radius: 500px;
+      color: white;
+    }
+    & span {
+      color:#8BB43C;
+    }
+  }
+  &__brands {
+    padding-bottom: 32px;
+  }
+  &__text {
+    padding-left: 60px;
+    & button {
+      cursor: pointer;
+    }
+  }
+  &__frog {
+    width: 62.5%  ;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &__info {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width:720px) {
+  .banner {
+    &__container {
+      background: url("../img/frog.png") no-repeat ;
+      background-size:auto 100% ;
+    }
+    &__text {
+      background: rgb(0,0,0,.2);
+      padding: 30px;
+      margin-left: 20px;
+      border-radius: 16px;
+      & p {
+        color: white;
+      }
+      & span {
+        color: white;
+      }
+    }
+    &__frog {
+      width: 100%;
+      display: none;
+    }
+  }
+}

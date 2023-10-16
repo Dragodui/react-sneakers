@@ -1,0 +1,47 @@
+
+.orders {
+  flex: 1;
+  &__header {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    gap: 20px;
+  }
+  &__orderinner {
+    display: flex;
+    flex-direction: column;
+    & a {
+      text-decoration: none;
+    }
+    & button {
+      width: auto;
+    }
+  }
+}
+.order {
+  margin-bottom: 40px;
+}
+@media (max-width:459px) {
+  .orders {
+    &__header {
+      & h1 {
+        font-size: 40px;
+      }
+    }
+    & h1 {
+      font-size: 40px;
+    }
+    & h2 {
+      font-size: 32px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .orders {
+    &__header {
+      img {
+        width: 60px;
+      }
+    }
+  }
+}
