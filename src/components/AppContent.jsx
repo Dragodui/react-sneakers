@@ -8,6 +8,7 @@ import Orders from "../Pages/Orders";
 import Favorite from "../Pages/Favorite";
 import Order from "../Pages/Order";
 import Footer from "./Footer";
+import Item from '../Pages/Item';
 
 import "../style/cart.css";
 import "../style/header.css";
@@ -115,6 +116,15 @@ const AppContent = () => {
                             setCart={setCart}
                             setFavorite={setFavorite}
                         />}
+                />
+                <Route
+                        exact path="/:id"
+                        element = {
+                            <Item
+                                setCart={setCart}
+                                setFavorite={setFavorite}
+                            />
+                        }
                 />
                 <Route
                     exact path= "/orders/:index"

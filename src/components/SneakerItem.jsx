@@ -3,6 +3,7 @@ import like from "../img/liked.svg";
 import unliked from "../img/unliked.svg";
 import addToCart from "../img/btn-plus.svg";
 import addedToCart from "../img/btn-checked.svg";
+import { Link } from 'react-router-dom';
 
 const SneakerItem = ({
     title,
@@ -15,7 +16,9 @@ const SneakerItem = ({
 
     const [isLiked, setIsLiked] = useState(false);
     const [isInCart, setIsInCart] = useState(false);
-    const handleLike = (item) => {
+
+    const handleLike = (item, e) => {
+        e.preventDefault();
         setFavorite(prevFavorites => {
             const isItemLiked = prevFavorites.some(i => i.id === item.id);
             let updatedFavorites = [];
@@ -33,7 +36,8 @@ const SneakerItem = ({
         setIsLiked(prevIsLiked => !prevIsLiked);
     };
 
-    const handleAddingToCart = (item) => {
+    const handleAddingToCart = (item, e) => {
+        e.preventDefault();
         setCart(prevCart => {
             const isItemInCart = prevCart.some(i => i.id === item.id);
             let updatedCart = [];
@@ -59,13 +63,12 @@ const SneakerItem = ({
         }
     }, [item]);
 
-
-
-
     return (
-        <div className="sneakers__sneaker sneaker">
+        <Link to={`/${item.id}`} className="sneakers__sneaker sneaker">
            <div className="sneaker__likearea">
-               <button onClick={() => handleLike(item)} className="sneakers__like">
+               <button onClick={e => {
+                    handleLike(item, e);
+                }} className="sneakers__like">
                    <img src={isLiked ? like : unliked} alt=""/>
                </button>
 
@@ -74,9 +77,11 @@ const SneakerItem = ({
             <div className="sneaker__title">{title}</div>
             <div className="sneaker__priceblock">
                 <div className="sneaker__price">PRICE: <br/><span>{price} $</span></div>
-                {<button onClick={() => handleAddingToCart(item)}><img src={isInCart ? addedToCart: addToCart} alt=""/></button>}
+                {<button onClick={e => {
+                    handleAddingToCart(item, e);
+                }}><img src={isInCart ? addedToCart: addToCart} alt=""/></button>}
             </div>
-        </div>
+        </Link>
     );
 };
 

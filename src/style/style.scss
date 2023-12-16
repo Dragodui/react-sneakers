@@ -28,3 +28,54 @@ button {
   flex-direction: column;
   min-height: 100vh;
 }
+
+
+.item {
+  padding-bottom: 40px;
+  & img {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  & h1 {
+    line-height: 35px;
+  }
+  &__button {
+    padding: 14px 20px;
+    border-radius: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    background: #9b9b9b;
+  }
+  &__inCart {
+    background-color: #60da76;
+  }
+  &__liked {
+    background: #ff5151;
+  }
+  &__buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  & p {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slick-next::before, .slick-prev::before {
+  color: #000 !important;
+}
+
+@media (max-width:970px) {
+  
+}

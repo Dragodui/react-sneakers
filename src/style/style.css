@@ -30,4 +30,49 @@ button {
   min-height: 100vh;
 }
 
-/*# sourceMappingURL=style.css.map */
+.item {
+  padding-bottom: 40px;
+}
+.item img {
+  max-width: 500px;
+  width: 100%;
+  margin-top: 40px;
+}
+.item h1 {
+  line-height: 35px;
+}
+.item__button {
+  padding: 14px 20px;
+  border-radius: 500px;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  background: #9b9b9b;
+}
+.item__inCart {
+  background-color: #60da76;
+}
+.item__liked {
+  background: #ff5151;
+}
+.item__buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.item p {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-next::before, .slick-prev::before {
+  color: #000 !important;
+}
