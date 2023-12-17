@@ -9,6 +9,7 @@ import sneaker8 from "./img/sneakers/8.jpg"
 import sneaker9 from "./img/sneakers/9.jpg"
 import sneaker10 from "./img/sneakers/10.jpg"
 
+
 const sneakers = [
     {
         id:1,

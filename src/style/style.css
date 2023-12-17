@@ -76,3 +76,19 @@ button {
 .slick-next::before, .slick-prev::before {
   color: #000 !important;
 }
+
+.modal {
+  position: fixed;
+  top: -100%;
+  right: 20px;
+  padding: 20px 30px;
+  background: lightgrey;
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  border-radius: 14px;
+  transition: 0.3s ease all;
+}
+.modal__visible {
+  top: 100px;
+}
